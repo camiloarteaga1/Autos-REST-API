@@ -2,4 +2,41 @@ body {
     background-color: #fafafa;
     font-family: 'Poppins', sans-serif; /* Changed font-family to 'Poppins' */
     overflow: hidden;
+}
+
+.logoNameSection {
+    display: flex;
+    justify-content: center;
+}
+
+.nameContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.companyName {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 42px;
+    margin: 25px 0;
+}
+
+.navigateSection {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.navigateLink {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+body {
+    background-color: #fafafa;
+    font-family: 'Poppins', sans-serif; /* Changed font-family to 'Poppins' */
+    overflow: hidden;
   }
