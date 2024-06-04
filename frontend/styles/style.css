@@ -1,7 +1,8 @@
-body {
-    background-color: #fafafa;
-    font-family: 'Poppins', sans-serif; /* Changed font-family to 'Poppins' */
-    overflow: hidden;
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .logoNameSection {
@@ -22,10 +23,14 @@ body {
     margin: 25px 0;
 }
 
+.navigateContainer {
+    display: flex;
+    gap: 20px; /* Añade espacio entre los enlaces de navegación */
+}
+
 .navigateSection {
-    position: absolute;
-    top: 50px;
-    right: 0;
+    display: flex;
+    align-items: center;
 }
 
 .navigateLink {
@@ -35,8 +40,7 @@ body {
     font-size: 17px;
     text-decoration: none;
 }
-body {
-    background-color: #fafafa;
-    font-family: 'Poppins', sans-serif; /* Changed font-family to 'Poppins' */
-    overflow: hidden;
-  }
+
+.navigateLink:hover {
+    text-decoration: underline;
+}
