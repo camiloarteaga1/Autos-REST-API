@@ -25,7 +25,7 @@
 
 .navigateContainer {
     display: flex;
-    gap: 20px; /* Añade espacio entre los enlaces de navegación */
+    gap: 20px;
 }
 
 .navigateSection {
@@ -37,10 +37,11 @@
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 25px;
     text-decoration: none;
 }
 
 .navigateLink:hover {
     text-decoration: underline;
+    color: #e57921;
 }
