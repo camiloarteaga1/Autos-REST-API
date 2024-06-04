@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Módulo de Reserva</title>
-    <link rel="stylesheet" href="../styles/reservationModule.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/reset.css">
+  <meta charset="UTF-8">
+  <title>Módulo de Reserva</title>
+  <link rel="stylesheet" href="../styles/reservationModule.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/reset.css">
 </head>
 <body>
-  <header>
+<header>
+  <div class="headerContainer">
     <section class="logoNameSection">
       <div class="nameContainer">
         <h1 class="companyName">
@@ -16,27 +17,125 @@
         </h1>
       </div>
     </section>
-    <section class="navigateSection">
-      <a class="navigateLink" href="userInfo.html">
+    <div class="navigateContainer">
+      <section class="navigateSectionUserInfo">
+        <a class="navigateLink" href="userInfo.html">
           User Info
-      </a>
-    </section>
-    <div class="aboutUs">
-
+        </a>
+      </section>
+      <section class="navigateSectionAboutUs">
+        <a class="navigateLink" href="aboutUs.html">
+          Nosotros
+        </a>
+      </section>
     </div>
-  </header>
-  <main>
-    <section class="searchSection">
-      <div class="searchBar">
-
+  </div>
+</header>
+<main>
+  <section class="searchSection">
+    <div class="searchBarWrapper">
+      <div class="searchBarContainer">
+        <label>
+          <input type="text" class="searchBar" placeholder="Buscar...">
+        </label>
       </div>
-      <div class="searchOption">
-
+      <button class="searchButton">Buscar</button>
+    </div>
+    <form class="filterForm">
+      <div class="filterOptionContainer">
+        <label for="searchFilter">Filtro de búsqueda:</label>
+        <select id="searchFilter" class="searchFilter">
+          <option value="tipo">Tipo</option>
+          <option value="color">Color</option>
+          <option value="modelo">Modelo</option>
+          <option value="marca">Marca</option>
+          <option value="precio">Precio</option>
+        </select>
       </div>
-    </section>
-    <section class="initialCarsSection">
+      <div class="optionGroups">
+        <div class="optionGroup">
+          <label>Tipo de transmisión:</label>
+          <label>
+            <input type="radio" name="transmission" value="manual" checked>
+            Manual
+          </label>
+          <label>
+            <input type="radio" name="transmission" value="automatic">
+            Automática
+          </label>
+        </div>
+        <div class="optionGroup">
+          <label>Equipamiento de lujo:</label>
+          <label>
+            <input type="radio" name="luxury" value="yes">
+            Sí
+          </label>
+          <label>
+            <input type="radio" name="luxury" value="no" checked>
+            No
+          </label>
+        </div>
+        <div class="optionGroup">
+          <label>Tipo de Combustible:</label>
+          <label>
+            <input type="radio" name="fuel" value="gas">
+            Gas
+          </label>
+          <label>
+            <input type="radio" name="fuel" value="gasoline" checked>
+            Gasolina
+          </label>
+          <label>
+            <input type="radio" name="fuel" value="electric">
+            Eléctrico
+          </label>
+          <label>
+            <input type="radio" name="fuel" value="hybrid">
+            Híbrido
+          </label>
+        </div>
+      </div>
+      <div class="optionGroups">
+        <div class="optionGroup">
+          <label>Asistencia en la carretera:</label>
+          <label>
+            <input type="radio" name="assistance" value="yes">
+            Sí
+          </label>
+          <label>
+            <input type="radio" name="assistance" value="no" checked>
+            No
+          </label>
+        </div>
+        <div class="optionGroup">
+          <label>Seguro todo riesgos:</label>
+          <label>
+            <input type="radio" name="insurance" value="yes" checked>
+            Sí
+          </label>
+          <label>
+            <input type="radio" name="insurance" value="no">
+            No
+          </label>
+        </div>
+        <div class="optionGroup">
+          <label>Asiento para bebé:</label>
+          <label>
+            <input type="radio" name="babySeat" value="yes">
+            Sí
+          </label>
+          <label>
+            <input type="radio" name="babySeat" value="no" checked>
+            No
+          </label>
+        </div>
+      </div>
+    </form>
+  </section>
 
-    </section>
-  </main>
+  <section class="initialCarsSection">
+
+  </section>
+</main>
 </body>
 </html>
