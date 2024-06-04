@@ -1,12 +1,3 @@
-.bodyContainer {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Asegura que el contenedor ocupe al menos la altura completa de la ventana */
-}
-
 .searchSection {
     width: 940px;
     margin: 20px auto;
@@ -26,24 +17,24 @@
 .searchBar {
     width: 100%;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 .searchButton {
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     color: white;
-    background-color: #e57921;
+    background-color: #007BFF;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .searchButton:hover {
-    background-color: #a15217;
+    background-color: #0056b3;
 }
 
 .filterForm {
@@ -56,26 +47,16 @@
 .filterOptionContainer {
     display: flex;
     flex-direction: column;
-    font-size: 25px;
 }
 
 .searchFilter {
     width: 100%;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #fff;
     margin-top: 5px;
-}
-
-.filterOptionGroupsContainer {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.optionTittle {
-    font-size: 20px;
 }
 
 .optionGroups {
@@ -88,48 +69,17 @@
     flex: 1 1 calc(33.33% - 20px); /* Ajuste para tres columnas con espacio entre ellas */
     display: flex;
     flex-direction: column;
-
     gap: 5px;
     min-height: 100px; /* Altura mínima para mantener alineación */
 }
 
 .optionGroup label {
-    font-size: 20px;
+    font-size: 17px;
     display: flex;
     align-items: center;
     gap: 10px; /* Espacio entre el texto y el botón de radio */
 }
 
-/* Estilos para los radio buttons */
 .optionGroup input[type="radio"] {
-    display: none; /* Ocultar el radio button original */
-}
-
-/* Personalizar el radio button */
-.optionGroup input[type="radio"] + label::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    vertical-align: middle;
-    background-color: white;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-/* Estilo cuando el radio button está seleccionado */
-.optionGroup input[type="radio"]:checked + label::before {
-    content: "✔";
-    color: white;
-    background-color: #e57921;
-    text-align: center;
-    font-size: 16px;
-    line-height: 18px;
-}
-
-/* Cambiar el estilo del texto a negrita cuando se selecciona */
-.optionGroup input[type="radio"]:checked + label {
-    font-weight: bold;
+    margin-right: 5px;
 }
