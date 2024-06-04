@@ -1,0 +1,85 @@
+.searchSection {
+    width: 940px;
+    margin: 20px auto;
+}
+
+.searchBarWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchBarContainer {
+    flex: 1;
+}
+
+.searchBar {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.searchButton {
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: #0056b3;
+}
+
+.filterForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los grupos de opciones */
+}
+
+.filterOptionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchFilter {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.optionGroups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre los grupos de opciones */
+}
+
+.optionGroup {
+    flex: 1 1 calc(33.33% - 20px); /* Ajuste para tres columnas con espacio entre ellas */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-height: 100px; /* Altura mínima para mantener alineación */
+}
+
+.optionGroup label {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el texto y el botón de radio */
+}
+
+.optionGroup input[type="radio"] {
+    margin-right: 5px;
+}
