@@ -8,134 +8,128 @@
   <link rel="stylesheet" href="../styles/reset.css">
 </head>
 <body>
-<header>
-  <div class="headerContainer">
-    <section class="logoNameSection">
-      <div class="nameContainer">
-        <h1 class="companyName">
-          Company Name
-        </h1>
+<div class="bodyContainer">
+  <header>
+    <div class="headerContainer">
+      <section class="logoNameSection">
+        <div class="nameContainer">
+          <h1 class="companyName">Rent & Go</h1>
+        </div>
+      </section>
+      <div class="navigateContainer">
+        <section class="navigateSectionUserInfo">
+          <a class="navigateLink" href="userInfo.html">User Info</a>
+        </section>
+        <section class="navigateSectionReservation">
+          <a class="navigateLink" href="userReservation.html">Tus Reservas</a>
+        </section>
       </div>
+    </div>
+  </header>
+  <main>
+    <section class="searchSection">
+      <div class="searchBarWrapper">
+        <div class="searchBarContainer">
+          <label>
+            <input type="text" class="searchBar" placeholder="Buscar...">
+          </label>
+        </div>
+        <button class="searchButton">Buscar</button>
+      </div>
+      <form class="filterForm">
+        <div class="filterOptionContainer">
+          <label for="searchFilter">Filtro de búsqueda:</label>
+          <select id="searchFilter" class="searchFilter">
+            <option value="tipo">Tipo</option>
+            <option value="color">Color</option>
+            <option value="modelo">Modelo</option>
+            <option value="marca">Marca</option>
+            <option value="precio">Precio</option>
+          </select>
+        </div>
+        <div class="filterOptionGroupsContainer">
+          <div class="optionGroups">
+            <div class="optionGroup">
+              <p class="optionTittle">Tipo de transmision</p>
+              <div>
+                <input type="radio" name="transmission" id="manual" value="manual" checked>
+                <label for="manual">Manual</label>
+              </div>
+              <div>
+                <input type="radio" name="transmission" id="automatic" value="automatic">
+                <label for="automatic">Automática</label>
+              </div>
+            </div>
+            <div class="optionGroup">
+              <p class="optionTittle">Asientos de Lujo</p>
+              <div>
+                <input type="radio" name="luxury" id="luxuryYes" value="yes">
+                <label for="luxuryYes">Sí</label>
+              </div>
+              <div>
+                <input type="radio" name="luxury" id="luxuryNo" value="no" checked>
+                <label for="luxuryNo">No</label>
+              </div>
+            </div>
+            <div class="optionGroup">
+              <p class="optionTittle">Tipo de combustible</p>
+              <div>
+                <input type="radio" name="fuel" id="gas" value="gas">
+                <label for="gas">Gas</label>
+              </div>
+              <div>
+                <input type="radio" name="fuel" id="gasoline" value="gasoline" checked>
+                <label for="gasoline">Gasolina</label>
+              </div>
+              <div>
+                <input type="radio" name="fuel" id="electric" value="electric">
+                <label for="electric">Eléctrico</label>
+              </div>
+              <div>
+                <input type="radio" name="fuel" id="hybrid" value="hybrid">
+                <label for="hybrid">Híbrido</label>
+              </div>
+            </div>
+          </div>
+          <div class="optionGroups">
+            <div class="optionGroup">
+              <p class="optionTittle">Asistencia en carretera</p>
+              <div>
+                <input type="radio" name="assistance" id="assistanceYes" value="yes">
+                <label for="assistanceYes">Sí</label>
+              </div>
+              <div>
+                <input type="radio" name="assistance" id="assistanceNo" value="no" checked>
+                <label for="assistanceNo">No</label>
+              </div>
+            </div>
+            <div class="optionGroup">
+              <p class="optionTittle">Seguro todo riesgo</p>
+              <div>
+                <input type="radio" name="insurance" id="insuranceYes" value="yes" checked>
+                <label for="insuranceYes">Sí</label>
+              </div>
+              <div>
+                <input type="radio" name="insurance" id="insuranceNo" value="no">
+                <label for="insuranceNo">No</label>
+              </div>
+            </div>
+            <div class="optionGroup">
+              <p class="optionTittle">Asiento para bebé</p>
+              <div>
+                <input type="radio" name="babySeat" id="babySeatYes" value="yes">
+                <label for="babySeatYes">Sí</label>
+              </div>
+              <div>
+                <input type="radio" name="babySeat" id="babySeatNo" value="no" checked>
+                <label for="babySeatNo">No</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </section>
-    <div class="navigateContainer">
-      <section class="navigateSectionUserInfo">
-        <a class="navigateLink" href="userInfo.html">
-          User Info
-        </a>
-      </section>
-      <section class="navigateSectionAboutUs">
-        <a class="navigateLink" href="aboutUs.html">
-          Nosotros
-        </a>
-      </section>
-    </div>
-  </div>
-</header>
-<main>
-  <section class="searchSection">
-    <div class="searchBarWrapper">
-      <div class="searchBarContainer">
-        <label>
-          <input type="text" class="searchBar" placeholder="Buscar...">
-        </label>
-      </div>
-      <button class="searchButton">Buscar</button>
-    </div>
-    <form class="filterForm">
-      <div class="filterOptionContainer">
-        <label for="searchFilter">Filtro de búsqueda:</label>
-        <select id="searchFilter" class="searchFilter">
-          <option value="tipo">Tipo</option>
-          <option value="color">Color</option>
-          <option value="modelo">Modelo</option>
-          <option value="marca">Marca</option>
-          <option value="precio">Precio</option>
-        </select>
-      </div>
-      <div class="optionGroups">
-        <div class="optionGroup">
-          <label>Tipo de transmisión:</label>
-          <label>
-            <input type="radio" name="transmission" value="manual" checked>
-            Manual
-          </label>
-          <label>
-            <input type="radio" name="transmission" value="automatic">
-            Automática
-          </label>
-        </div>
-        <div class="optionGroup">
-          <label>Equipamiento de lujo:</label>
-          <label>
-            <input type="radio" name="luxury" value="yes">
-            Sí
-          </label>
-          <label>
-            <input type="radio" name="luxury" value="no" checked>
-            No
-          </label>
-        </div>
-        <div class="optionGroup">
-          <label>Tipo de Combustible:</label>
-          <label>
-            <input type="radio" name="fuel" value="gas">
-            Gas
-          </label>
-          <label>
-            <input type="radio" name="fuel" value="gasoline" checked>
-            Gasolina
-          </label>
-          <label>
-            <input type="radio" name="fuel" value="electric">
-            Eléctrico
-          </label>
-          <label>
-            <input type="radio" name="fuel" value="hybrid">
-            Híbrido
-          </label>
-        </div>
-      </div>
-      <div class="optionGroups">
-        <div class="optionGroup">
-          <label>Asistencia en la carretera:</label>
-          <label>
-            <input type="radio" name="assistance" value="yes">
-            Sí
-          </label>
-          <label>
-            <input type="radio" name="assistance" value="no" checked>
-            No
-          </label>
-        </div>
-        <div class="optionGroup">
-          <label>Seguro todo riesgos:</label>
-          <label>
-            <input type="radio" name="insurance" value="yes" checked>
-            Sí
-          </label>
-          <label>
-            <input type="radio" name="insurance" value="no">
-            No
-          </label>
-        </div>
-        <div class="optionGroup">
-          <label>Asiento para bebé:</label>
-          <label>
-            <input type="radio" name="babySeat" value="yes">
-            Sí
-          </label>
-          <label>
-            <input type="radio" name="babySeat" value="no" checked>
-            No
-          </label>
-        </div>
-      </div>
-    </form>
-  </section>
-
-  <section class="initialCarsSection">
-
-  </section>
-</main>
+  </main>
+</div>
 </body>
 </html>
