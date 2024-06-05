@@ -57,16 +57,40 @@
     display: flex;
     flex-direction: column;
     font-size: 25px;
+    margin-bottom: 15px; /* Para dar algo de espacio alrededor del contenedor */
 }
 
 .searchFilter {
     width: 100%;
     padding: 10px;
     font-size: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
+    border: 2px solid #e57921; /* Color de borde naranja principal */
+    border-radius: 8px; /* Redondear bordes */
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+    color: #333333; /* Color del texto negro */
     margin-top: 5px;
+    appearance: none; /* Eliminar la flecha predeterminada en algunos navegadores */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns="http://www.w3.org/2000/svg"%20viewBox="0%200%204%205"><path%20fill="%23e57921"%20d="M2%200L0%202h4zm0%205L0%203h4z"/></svg>'); /* Personalizar la flecha con naranja principal */
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 12px 12px;
+}
+
+.searchFilter:focus {
+    outline: none; /* Eliminar borde azul predeterminado */
+    box-shadow: 0 0 5px rgba(229, 121, 33, 0.5); /* Agregar sombra al hacer foco con naranja principal */
+}
+
+.optionDropDown {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #e57921; /* Color de fondo naranja principal */
+    color: #ffffff; /* Color del texto blanco */
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid #c7671b; /* Agregar borde inferior con naranja oscuro */
 }
 
 .filterOptionGroupsContainer {
