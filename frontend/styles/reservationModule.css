@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Asegura que el contenedor ocupe al menos la altura completa de la ventana */
+    min-height: 100vh;
 }
 
 .searchSection {
