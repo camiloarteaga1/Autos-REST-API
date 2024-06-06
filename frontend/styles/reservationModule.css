@@ -141,6 +141,7 @@
     border: 2px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 /* Estilo cuando el radio button está seleccionado */
