@@ -30,7 +30,17 @@
     border-radius: 10px;
 }
 
+.tarjetContainer:hover .tarjetImage {
+    height: 205px;
+    width: 205px;
+}
+
 .tarjetName {
     font-weight: bold;
     font-size: 17px;
+}
+
+.tarjetContainer:hover .tarjetName {
+    text-decoration: underline;
+    color: #e57921;
 }
