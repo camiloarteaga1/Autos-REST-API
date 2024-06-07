@@ -61,7 +61,6 @@
 }
 
 .searchFilter {
-    width: 100%;
     padding: 10px;
     font-size: 20px;
     border: 2px solid #e57921;
@@ -84,13 +83,10 @@
 }
 
 .optionDropDown {
-    font-size: 18px;
-    padding: 10px;
     background-color: #e57921;
     color: #ffffff;
     font-weight: bold;
     border: none;
-    border-bottom: 1px solid #c7671b;
 }
 
 .filterOptionGroupsContainer {
@@ -153,4 +149,14 @@
 
 .optionGroup input[type="radio"]:checked + label {
     font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .bodyContainer {
+        justify-content: flex-start;
+    }
+
+    .searchSection {
+        width: 640px;
+    }
 }

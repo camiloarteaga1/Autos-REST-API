@@ -15,7 +15,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgb(199, 103, 27);
     background-color: #fff;
     max-width: 800px;
     width: 100%;
@@ -43,4 +43,10 @@
 
 .InfoCarText {
     margin: 5px 0;
+}
+
+@media (max-width: 1000px) {
+    .bodyContainer {
+        justify-content: flex-start;
+    }
 }
