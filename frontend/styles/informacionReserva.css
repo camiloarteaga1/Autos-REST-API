@@ -33,10 +33,14 @@
     justify-content: center;
 }
 
-.card-info h2 {
+.carNameInfo {
     margin: 0 0 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-.card-info p {
+.InfoCarText {
     margin: 5px 0;
 }
