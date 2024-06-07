@@ -73,5 +73,5 @@
 
 .tarjetContainer:hover .tarjetName {
     text-decoration: underline;
-    color: #e57921;
+    color: black;
 }
