@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Reservation</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/userReservation.css">
+    <link rel="stylesheet" href="../styles/tarjet.css">
+    <link rel="stylesheet" href="../styles/resultadosBusqueda.css">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</head>
+<body>
+<div class="userReservationContainer">
+    <header>
+        <div class="headerContainer">
+            <section class="logoNameSection">
+                <div class="nameContainer">
+                    <h1 class="companyName">
+                        Car Rental
+                    </h1>
+                </div>
+            </section>
+            <div class="navigateContainer">
+                <section class="navigateSectionUserInfo">
+                    <a class="navigateLink" href="reservationModule.html">
+                        Home
+                    </a>
+                </section>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="reservationTittle">Tus Resultados</h1>
+        <ul class="featured-car-list">
+
+        <li>
+            <div class="featured-car-card">
+
+                <figure class="card-banner">
+                    <img id="pic" src="" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                    <div class="card-title-wrapper">
+                        <h3 class="h3 card-title">
+                            <a href="#" id="carType"> </a>
+                        </h3>
+
+                        <data class="year" value="2021" id="modelYear"> </data>
+                    </div>
+
+                    <ul class="card-list">
+
+                        <li class="card-list-item">
+                            <ion-icon name="people-outline" role="img" class="md hydrated" aria-label="people outline"></ion-icon>
+
+                            <span class="card-item-text" id="numDoors"> </span>
+                        </li>
+
+                        <li class="card-list-item">
+                            <ion-icon name="flash-outline" role="img" class="md hydrated" aria-label="flash outline"></ion-icon>
+
+                            <span class="card-item-text" id="fuel"> </span>
+                        </li>
+
+                        <li class="card-list-item">
+                            <ion-icon name="speedometer-outline" role="img" class="md hydrated" aria-label="speedometer outline"></ion-icon>
+
+                            <span class="card-item-text">6.1km / 1-litre</span>
+                        </li>
+
+                        <li class="card-list-item" >
+                            <ion-icon name="hardware-chip-outline" role="img" class="md hydrated" aria-label="hardware chip outline"></ion-icon>
+
+                            <span class="card-item-text" id="transmission">Automatic</span>
+                        </li>
+
+                    </ul>
+
+                    <div class="card-price-wrapper">
+
+                        <p class="card-price">
+                            <strong id="price"> </strong> / Mes
+                        </p>
+
+                        <button class="btn fav-btn" aria-label="Add to favourite list">
+                            <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
+                        </button>
+
+                        <button class="btn" id="reserved"> </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </li>
+
+    </ul>
+    </main>
+</div>
+</body>
+</html>

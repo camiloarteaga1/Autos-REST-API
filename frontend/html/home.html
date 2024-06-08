@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Reservation</title>
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/home.css">
+  <script src="../scripts/sesion.js" defer></script>
+  <script src="../scripts/home.js" defer></script>
+</head>
+<body>
+<div id="user-module-container">
+  <h1>Car Rental</h1>
+
+  <div id="user-module">
+
+    <div id="profile-name">Nombre Usuario</div>
+    <button id="log-out">Log-Out    <i class="fa-solid fa-right-from-bracket"></i></button>
+
+  </div>
+</div>
+
+<hr>
+
+<div id="main-module">
+
+  <div id="summary">
+    <h2>Resumen Reservas</h2>
+    <div id="resumen-container"></div>
+  </div>
+
+  <div id="new-reserva">
+    <h2>Nueva Reserva <span><i class="fa-solid fa-circle-plus"></i></span></h2>
+    <p>¡Busca el coche de tu elección y procede a crear una nueva reserva aquí!</p>
+    <div class="image-button">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-car" aria-label="icono +reserva">
+          <path d="M5 13l-1 2v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h10v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5l-1-2H5z"></path>
+          <path d="M16 3H8l-1 6h10l-1-6z"></path>
+          <circle cx="8.5" cy="16.5" r="1.5"></circle>
+          <circle cx="15.5" cy="16.5" r="1.5"></circle>
+        </svg>
+      </div>
+      <button id="new-reservation-button">Reservar</button>
+    </div>
+  </div>
+
+  <div id="reporte">
+    <h2>Reporte <span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="fa-solid fa-receipt">
+      <path d="M2 3h20v18H2V3zm18 2H4v14h16V5zM6 7h12v2H6V7zm0 4h12v2H6v-2zm0 4h12v2H6v-2z"></path>
+    </svg>
+  </span></h2>
+    <p>¡Genera aquí tu reporte y consulta el total a pagar por tus reservas!</p>
+    <div class="image-button">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card" aria-label="icono reporte">
+          <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+          <line x1="1" y1="10" x2="23" y2="10"></line>
+        </svg>
+      </div>
+      <button id="generate-report-button">Generar Reporte</button>
+    </div>
+  </div>
+</div>
+
+<hr>
+</body>
+</html>
