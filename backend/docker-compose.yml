@@ -1,0 +1,26 @@
+name: car-rental
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - ${DB_PORT}:${DB_PORT}
+    volumes:
+      - API_postgres-db:/var/lib/postgresql/data
+      - ./queries.sql:/docker-entrypoint-initdb.d/create_tables.sql
+
+  web:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
+    command: go run main.go -b 0.0.0.0
+
+volumes:
+  API_postgres-db:

@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	//Inicializar la base de datos
+	// Start database connection
 	//db.DB_Conection()
 
 	// Router setup
@@ -24,6 +24,7 @@ func main() {
 		AllowedMethods:   []string{"GET", "POST", "DELETE", "PUT"},
 	})
 
+	// Routes
 	handler := c.Handler(router)
 
 	// Start server
