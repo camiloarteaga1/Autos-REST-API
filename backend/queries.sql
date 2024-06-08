@@ -1,10 +1,10 @@
 CREATE TABLE cars (
     id              bigserial                   NOT NULL,
-    reservation     bool         DEFAULT false  NULL,
     created_at      timestamptz                 NULL,
     updated_at      timestamptz                 NULL,
     deleted_at      timestamptz                 NULL,
-    car_id int8                                 NOT NULL,
+    car_id          int8                        NOT NULL,
+    reservation     bool         DEFAULT false  NULL,
     price int8                                  NOT NULL,
     modelYear       int8                        NOT NULL,
     carType         text                        NOT NULL,
@@ -12,15 +12,15 @@ CREATE TABLE cars (
     transmission    text                        NOT NULL,
     fuel            text                        NOT NULL,
     motor           text                        NOT NULL,
-    doors int8                                  NOT NULL,
-    breaks_abs      bool                        NOT NULL,
+    numDoors        int8                        NOT NULL,
+    brakes_abs      bool                        NOT NULL,
     price           text                        NOT NULL,
     CONSTRAINT cars_pkey PRIMARY KEY (id)
 );
 
 CREATE INDEX idx_cars_deleted_at ON public.cars USING btree (deleted_at);
 
-insert into cars (car_id, reservation, price, modelYear, carType, brand, transmission, fuel, motor, doors, breaks_abs, pic) 
+insert into cars (car_id, reservation, price, modelYear, carType, brand, transmission, fuel, motor, numDoors, brakes_abs, pic) 
 values 
 (1, false,  800,    2015,   'Civic',        'Honda',        'Automatic',    'Gasoline',     'Sedan',        4,  true,   'https://www.carpro.com/hs-fs/hubfs/2022-Honda-Civic-feature-carprousa.jpg?width=1530&name=2022-Honda-Civic-feature-carprousa.jpg'),
 (2, false,  500,    2018,   'Golf',         'Volkswagen',   'Manual',       'Gasoline',     'Hatchback',    5,  true,   'https://i.gaw.to/vehicles/photos/08/46/084628_2018_volkswagen_Golf.jpg'),
