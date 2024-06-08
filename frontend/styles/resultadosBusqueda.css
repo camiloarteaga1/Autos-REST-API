@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
-repeat(3, minmax(0, 1fr))
+    repeat(3, minmax(0, 1fr))
 }
 
 li {
@@ -27,7 +27,9 @@ li {
 
 .featured-car-card .card-banner > img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .featured-car-card .card-content {
@@ -150,4 +152,16 @@ h3 {
     overflow: hidden;
     cursor: pointer;
     border: none
+}
+
+@media (max-width: 1000px) {
+    .featured-car-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .featured-car-list {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
