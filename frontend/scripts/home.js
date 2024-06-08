@@ -185,7 +185,7 @@ function DispalyReservas(reservasOBJCT) {
 
                         let card2beDeleted
 
-                        if(clickedButton.target.className == 'delete-reserva'){
+                        if(clickedButton.target.className === 'delete-reserva'){
 
                             reserva_id = clickedButton.target.id;
 

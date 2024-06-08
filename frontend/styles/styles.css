@@ -49,7 +49,7 @@ label {
 
 body{
 
-    background-image: url('frontend/assets/media/man-fastening-safety-belt-car.jpg'); 
+    background-image: url('../media/man-fastening-safety-belt-car.jpg');
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
