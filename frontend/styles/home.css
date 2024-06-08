@@ -1,0 +1,221 @@
+
+h1{
+    padding-left: 0.4em;
+}
+
+#user-module-container{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1em;
+}
+
+#user-module{
+
+    display: flex;
+    align-items: end;
+
+    flex-direction: column;
+
+    padding: 1em;
+
+    gap: 0.4em;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+
+}
+
+#profile-name{
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #9e600f;
+}
+
+#profile-name i{
+
+    font-size: 25px;
+    color: #9e5b0f;
+}
+
+#log-out{
+
+    font-size: 12px;
+    font-weight: 700;
+
+    width: 8em;
+    height: 2.5em;
+
+    border-radius: 10px;
+
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#log-out:hover{
+
+    cursor: pointer;
+
+    background-color: rgba(0, 0, 0, 0.24);
+
+    transition: 0.5s;
+}
+
+
+#main-module{
+
+    display: flex;
+
+    flex-direction: row;
+    align-items:flex-start;
+
+    justify-content: space-around;
+
+    gap: 2em;
+
+    padding: 0.5em;
+    margin: 1em;
+
+    height: 22.3em;
+}
+
+#resumen,#new-reserva,#reporte{
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 1em;
+
+    height: 20.3em;
+}
+
+#new-reserva,#reporte{
+
+    display: flex;
+
+    flex-direction: column;
+
+
+}
+
+.image-button{
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15em;
+}
+
+p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+#new-reservation-button{
+
+    font-size: 25px;
+    font-weight: 800;
+
+    width: 8em;
+    height: 2.5em;
+
+    border-radius: 25px;
+
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #feefdf;
+}
+
+#generate-report-button{
+
+    font-size: 25px;
+    font-weight: 800;
+
+    width: 12em;
+    height: 2.5em;
+
+    border-radius: 25px;
+
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: #feefdf;
+}
+
+
+#generate-report-button:hover,#new-reservation-button:hover{
+
+    cursor: pointer;
+
+    background-color: rgba(83, 2, 79, 0.24);
+
+    transition: 0.5s;
+}
+
+
+#resumen-container{
+
+    border-radius: 15px;
+    padding: 1em;
+    height: 11.5em;
+
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+}
+
+
+[class="card-reserva"]{
+
+
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.5em 1em 0.5em 1em;
+
+    margin: 0.6em 0 0.6em 0;
+
+
+    border-radius: 9px;
+
+    background-color: #b3a189;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+p[class="resumen-name"]{
+
+    font-weight: 700;
+    font-size: 17px;
+
+}
+
+[class="card-reserva"] i{
+    font-size: 20px;
+
+}
+
+[class="delete-reserva"]{
+
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0.5em;
+}
+
+[class="delete-reserva"]:hover{
+
+    background-color: #9e4f0f;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
