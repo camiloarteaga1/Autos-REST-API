@@ -14,7 +14,7 @@
     <div class="headerContainer">
       <section class="logoNameSection">
         <div class="nameContainer">
-          <h1 class="companyName">Car Rental</h1>
+          <h1 class="companyName">Rent & Go</h1>
         </div>
       </section>
       <div class="navigateContainer">
@@ -38,10 +38,10 @@
         <div class="filterOptionContainer">
           <label for="searchFilter">Filtro de búsqueda:</label>
           <select id="searchFilter" class="searchFilter">
-            <option class="optionDropDown" name="tipo">Tipo</option>
+            <option class="optionDropDown" value="tipo" id="input-tipo">Tipo</option>
             <option class="optionDropDown" value="color">Color</option>
-            <option class="optionDropDown" name="modeloNombre">Modelo</option>
-            <option class="optionDropDown" name="marca">Marca</option>
+            <option class="optionDropDown" value="modelo" id="input-name-modelo">Modelo</option>
+            <option class="optionDropDown" value="marca" id="input-marca">Marca</option>
             <option class="optionDropDown" value="precio">Precio</option>
           </select>
         </div>
@@ -72,19 +72,19 @@
             <div class="optionGroup">
               <p class="optionTittle">Tipo de combustible</p>
               <div>
-                <input type="radio" name="combustible" id="gas" value="gas">
+                <input type="radio" name="fuel" id="gas" value="gas">
                 <label for="gas">Gas</label>
               </div>
               <div>
-                <input type="radio" name="combustible" id="gasoline" value="gasoline" checked>
+                <input type="radio" name="fuel" id="gasoline" value="gasoline" checked>
                 <label for="gasoline">Gasolina</label>
               </div>
               <div>
-                <input type="radio" name="combustible" id="electric" value="electric">
+                <input type="radio" name="fuel" id="electric" value="electric">
                 <label for="electric">Eléctrico</label>
               </div>
               <div>
-                <input type="radio" name="combustible" id="hybrid" value="hybrid">
+                <input type="radio" name="fuel" id="hybrid" value="hybrid">
                 <label for="hybrid">Híbrido</label>
               </div>
             </div>
