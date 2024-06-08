@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+  
+}
+
+h1{
+
+    font-family: 'Poppins',sans-serif;
+    font-weight:900;
+    font-style: normal;
+    font-size: 3em;
+}
+
+h2,h3{
+
+    font-family: 'Poppins',sans-serif;
+    font-weight:800;
+    font-style: normal;
+    font-size: 1.5em;
+
+}
+
+p,input,a,button,span,label,.swal2-html-container,[class*="car-"],#profile-name{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+}
+
+label {
+    width: 150px; 
+    height: 30px; 
+
+}
+
+[class="swal2-actions"] button{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: normal;
+}
+
+#swal2-title{
+
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+    font-size: 1.9em;
+}
+
+body{
+
+    background-image: url('frontend/assets/media/man-fastening-safety-belt-car.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+
+}
