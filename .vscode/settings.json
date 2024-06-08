@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "API_AutosReserv",
+            "database": "postgres",
+            "username": "postgres",
+            "password": "mysecretpassword123",
+            "connectionTimeout": 30
+        }
+    ],
+    "liveServer.settings.port": 5501
+}
