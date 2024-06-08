@@ -20,7 +20,7 @@ func LoginHandler(w http.ResponseWriter, req *http.Request) {
 
 	passw := user.Password
 
-	server.DB.Where("mail = ? AND password = ?", email, passw).First(&findUser) //de busca la exacta coincidencia dentro del server
+	server.DB.Where("email = ? AND password = ?", email, passw).First(&findUser) //de busca la exacta coincidencia dentro del server
 
 	if findUser.ID == 0 {
 
